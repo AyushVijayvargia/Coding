@@ -1,6 +1,6 @@
 package Graphs;
 
-/**Java program to print DFS, DFS traversal from a given given graph,
+/**Java program to print BFS and DFS traversal from a given graph,
  * it checks for disconnected components(isolated units) also,
  * good graph made to see the difference the between both....
 **/
