@@ -6,20 +6,20 @@ package staticImplemenations;
  *  execution of your program.
  * */
 
-public class EagerStaticInitializerSingletoDesignPattern {
+public class EagerStaticInitializerSingletonDesignPattern {
 
 	// create an object of SingleObject
 	// Static initializer based Java implementation of
 	// singleton design pattern
-	private static EagerStaticInitializerSingletoDesignPattern instance = new EagerStaticInitializerSingletoDesignPattern();
+	private static EagerStaticInitializerSingletonDesignPattern instance = new EagerStaticInitializerSingletonDesignPattern();
 
 	// make the constructor private so that this class cannot be
 	// instantiated
-	private EagerStaticInitializerSingletoDesignPattern() {
+	private EagerStaticInitializerSingletonDesignPattern() {
 	}
 
 	// Get the only object available
-	public static EagerStaticInitializerSingletoDesignPattern getInstance() {
+	public static EagerStaticInitializerSingletonDesignPattern getInstance() {
 		return instance;
 	}
 

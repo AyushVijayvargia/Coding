@@ -9,7 +9,8 @@ public class staticMainMethodSingleton {
 		// SingletoDesignPattern object1 = new SingletoDesignPattern();
 
 		// Get the only object available
-		EagerStaticInitializerSingletoDesignPattern object = EagerStaticInitializerSingletoDesignPattern.getInstance();
+		EagerStaticInitializerSingletonDesignPattern object = EagerStaticInitializerSingletonDesignPattern
+				.getInstance();
 
 		// show the message
 		object.showMessage();
