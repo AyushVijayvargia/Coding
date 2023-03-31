@@ -18,7 +18,7 @@ public class Hashing {
 
         System.out.println("****** without overriding hashcode ******");//2
         System.out.println("equals : "+s1.equals(s2));//false
-        System.out.println("hashcode : "+ (s1.hashCode()==s2.hashCode()));
+        System.out.println("hashcode : "+ (s1.hashCode()==s2.hashCode()));//false
 
         List<HashStudent> students = new ArrayList<>();
         students.add(s1);
@@ -41,9 +41,9 @@ public class Hashing {
         s4.setName("Ayush");
         s4.setRollNo(1l);
 
-        System.out.println("****** with custom hashcode ******");//2
-        System.out.println("equals : "+s3.equals(s4));//false
-        System.out.println("hashcode : "+ (s3.hashCode()==s4.hashCode()));
+        System.out.println("****** with custom hashcode ******");
+        System.out.println("equals : "+s3.equals(s4));//true
+        System.out.println("hashcode : "+ (s3.hashCode()==s4.hashCode()));//true
 
         List<HashStudentWithHashCode> studentsArrayList = new ArrayList<>();
         studentsArrayList.add(s3);
@@ -55,7 +55,7 @@ public class Hashing {
         studentsHash.add(s3);
         studentsHash.add(s4);
 
-        System.out.println("size after adding two students to set : "+studentsHash.size());//2
+        System.out.println("size after adding two students to set : "+studentsHash.size());//1
 
     }
 }
